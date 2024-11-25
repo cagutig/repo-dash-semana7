@@ -16,7 +16,7 @@ server = app.server
 
 # PREDICTION API URL 
 api_url = os.getenv('API_URL')
-api_url = "http://{}:8001/api/v1/predict".format(api_url)
+api_url = f"{api_url}/api/v1/predict"
 
 # Layout in HTML
 app.layout = html.Div(
